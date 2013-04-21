@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<title>Image Framer</title>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="imageframer/if.css" />
+<script type="text/javascript" src="imageframer/if.js" ></script>
+
+<script type="text/javascript">
+$(function() {
+
+  $('.frameThis').imageframer({
+    frameType: 'wood5',
+    frameSize: 2,
+    innerShadow: 3
+  });
+
+});
+</script>
+
+<style type="text/css">
+
+
+    /* Styling for the div in question */
+    .frameThis {
+        text-align: center;
+        font-family: "Arial", sans-serif;
+        color: #fff;
+        padding: 20px;
+        background: #333333;
+        background: -moz-linear-gradient(top,  #333333 0%, #111111 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(100%,#111111));
+        background: -webkit-linear-gradient(top,  #333333 0%,#111111 100%);
+        background: -o-linear-gradient(top,  #333333 0%,#111111 100%);
+        background: -ms-linear-gradient(top,  #333333 0%,#111111 100%);
+        background: linear-gradient(to bottom,  #333333 0%,#111111 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#111111',GradientType=0 );
+    }
+    .frameThis h2 {
+        margin: 0px 0px 10px 0px;
+        font-size: 16px;
+    }
+    .frameThis p {
+        margin: 0px;
+        padding: 0px;
+        color: #c1c1c1;
+        font-size: 12px;
+    }
+
+</style>
+
+</head>
+<body style=" background: #e1e1e1; ">
+
+    <div class="frameThis">
+
+        <h2>Image Framer?</h2>
+        <p>
+            Despite the name, Image Framer <br />
+            can frame virtually any element.
+        </p>
+
+    </div>
+
+</body>
+</html>
