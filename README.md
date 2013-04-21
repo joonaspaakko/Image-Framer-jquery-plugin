@@ -1,6 +1,6 @@
-# Image Framer jquery plugn
-
 ![Image Framer](Image-Framer.jpg)
+
+# Image Framer jquery plugin
 
 Image Framer is very simple jQuery plugin that wraps your images inside a frame. _Actually, despite the name, you can frame any element._
 
