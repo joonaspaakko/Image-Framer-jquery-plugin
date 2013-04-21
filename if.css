@@ -1,0 +1,133 @@
+
+/**
+ * Image Framer v.1.0
+ *
+ * Copyright 2013, Joonas Pääkkö
+ * Licensed under: MIT ( more info in the included copyright.txt )
+ */
+
+.if-equalizer { display: inline-block; }
+.if-wrap { float: left; position: relative; z-index: 0; }
+
+.if-image {
+    position: relative;
+    z-index: 0;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    float: left;
+}
+
+.if-sides,
+.if-corners {
+    position: absolute;
+    float: left;
+}
+
+.if-sides {
+    z-index: 2;
+}
+
+.if-corners {
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+.if-innerShadow {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+/* Size 1 */
+.if-wrap.if-size1 { margin: 16px; min-width: 14px; min-height: 14px; }
+
+.if-wrap.if-size1 .if-corners { width: 28px; height: 28px; }
+.if-wrap.if-size1 .if-top-right { background-position: bottom left; top: -13px; right: -13px; }
+.if-wrap.if-size1 .if-bottom-right { background-position: top left; bottom: -13px; right: -13px; }
+.if-wrap.if-size1 .if-bottom-left { background-position: top right; bottom: -13px; left: -13px; }
+.if-wrap.if-size1 .if-top-left { background-position: bottom right; top: -13px; left: -13px; }
+
+.if-wrap.if-size1 .if-top, .if-wrap.if-size1 .if-bottom { height: 15px; background-position: repeat-x; }
+.if-wrap.if-size1 .if-top { background-position: top center; top: -12px; left: 4px; right: 4px; }
+.if-wrap.if-size1 .if-bottom { background-position: bottom center; bottom: -13px; left: 4px; right: 4px; }
+
+.if-wrap.if-size1 .if-right, .if-wrap.if-size1 .if-left { width: 15px; background-position: repeat-y; }
+.if-wrap.if-size1 .if-right { background-position: center right; top: 4px; bottom: 5px;  right: -13px; }
+.if-wrap.if-size1 .if-left { background-position: center left; top: 4px; bottom: 5px; left: -12px; }
+
+
+/* Size 2 */
+.if-wrap.if-size2 { margin: 24px; min-width: 20px; min-height: 20px; }
+
+.if-wrap.if-size2 .if-corners { width: 42px; height: 42px; }
+.if-wrap.if-size2 .if-top-right { background-position: bottom left; top: -20px; right: -20px; }
+.if-wrap.if-size2 .if-bottom-right { background-position: top left; bottom: -20px; right: -20px; }
+.if-wrap.if-size2 .if-bottom-left { background-position: top right; bottom: -20px; left: -20px; }
+.if-wrap.if-size2 .if-top-left { background-position: bottom right; top: -20px; left: -20px; }
+
+.if-wrap.if-size2 .if-top, .if-wrap.if-size2 .if-bottom { height: 22px; background-position: repeat-x; }
+.if-wrap.if-size2 .if-top { background-position: top center; top: -20px; left: 5px; right: 4px; }
+.if-wrap.if-size2 .if-bottom { background-position: bottom center; bottom: -21px; left: 5px; right: 4px; }
+
+.if-wrap.if-size2 .if-right, .if-wrap.if-size2 .if-left { width: 22px; background-position: repeat-y; }
+.if-wrap.if-size2 .if-right { background-position: center right; top: 4px; bottom: 5px;  right: -21px; }
+.if-wrap.if-size2 .if-left { background-position: center left; top: 4px; bottom: 5px; left: -20px; }
+
+
+/* Size 3 */
+.if-wrap.if-size3 { margin: 33px; min-width: 30px; min-height: 30px; }
+
+.if-wrap.if-size3 .if-corners { width: 66px; height: 66px; }
+.if-wrap.if-size3 .if-top-right { background-position: bottom left; top: -31px; right: -31px; }
+.if-wrap.if-size3 .if-bottom-right { background-position: top left; bottom: -31px; right: -31px; }
+.if-wrap.if-size3 .if-bottom-left { background-position: top right; bottom: -31px; left: -31px; }
+.if-wrap.if-size3 .if-top-left { background-position: bottom right; top: -31px; left: -31px; }
+
+.if-wrap.if-size3 .if-top, .if-wrap.if-size3 .if-bottom { height: 35px; background-position: repeat-x; }
+.if-wrap.if-size3 .if-top { background-position: top center; top: -30px; left: 6px; right: 6px; }
+.if-wrap.if-size3 .if-bottom { background-position: bottom center; bottom: -31px; left: 6px; right: 6px; }
+
+.if-wrap.if-size3 .if-right, .if-wrap.if-size3 .if-left { width: 35px; background-position: repeat-y; }
+.if-wrap.if-size3 .if-right { background-position: center right; top: 6px; bottom: 6px;  right: -31px; }
+.if-wrap.if-size3 .if-left { background-position: center left; top: 6px; bottom: 6px; left: -30px; }
+
+
+/* Size 4 */
+.if-wrap.if-size4 { margin: 48px; min-width: 48px; min-height: 48px; }
+
+.if-wrap.if-size4 .if-corners { width: 101px; height: 101px; }
+.if-wrap.if-size4 .if-top-right { background-position: bottom left; top: -48px; right: -48px; }
+.if-wrap.if-size4 .if-bottom-right { background-position: top left; bottom: -48px; right: -48px; }
+.if-wrap.if-size4 .if-bottom-left { background-position: top right; bottom: -48px; left: -48px; }
+.if-wrap.if-size4 .if-top-left { background-position: bottom right; top: -48px; left: -48px; }
+
+.if-wrap.if-size4 .if-top, .if-wrap.if-size4 .if-bottom { height: 54px; background-position: repeat-x; }
+.if-wrap.if-size4 .if-top { background-position: top center; top: -48px; left: 8px; right: 8px; }
+.if-wrap.if-size4 .if-bottom { background-position: bottom center; bottom: -48px; left: 8px; right: 8px; }
+
+.if-wrap.if-size4 .if-right, .if-wrap.if-size4 .if-left { width: 54px; background-position: repeat-y; }
+.if-wrap.if-size4 .if-right { background-position: center right; top: 8px; bottom: 8px;  right: -48px; }
+.if-wrap.if-size4 .if-left { background-position: center left; top: 8px; bottom: 8px; left: -48px; }
+
+
+/* Size 4 - TAPE ( tape only has one size at the moment ) */
+.if-wrap.if-tape { margin: 48px; min-width: 48px; min-height: 48px; }
+
+.if-wrap.if-tape .if-top-right { width: 98px; height: 87px;background-position: bottom left; top: -30px; right: -26px; }
+.if-wrap.if-tape .if-bottom-right { width: 87px; height: 96px;background-position: top left; bottom: -36px; right: -31px; }
+.if-wrap.if-tape .if-bottom-left { width: 88px; height: 97px;background-position: top right; bottom: -34px; left: -35px; }
+.if-wrap.if-tape .if-top-left { width: 75px; height: 87px; background-position: bottom right; top: -33px; left: -29px; }
+
+
+
+
+
