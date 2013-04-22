@@ -1,6 +1,6 @@
 ![Image Framer](Image-Framer.jpg)
 
-# Image Framer jquery plugin
+## Image Framer jquery plugin
 
 Image Framer is very simple jQuery plugin that wraps your images inside a frame. _Actually, despite the name, you can frame any element._
 
@@ -9,15 +9,37 @@ _Website is coming soon._ Currently you can find demo html files in the package.
 
 ## Freatures
 
-* All of the frames are flexible to any pretty much any image size
-* Comes with 24 frames
+* All of the frames are flexible to pretty much any image size
+* Contains 24 frames
 * All frames come in 4 different sizes
-* 4 different inner shadows
+* 4 different optional inner shadows
 * HTML 5 data-attributes can be used to overwrite the plugin options
 
 ## Usage instructions
 
-* _Coming soon..._
+###1.
+
+Add imageframer folder to you website root andd the following to your web page `<head>`.
+
+```javascript
+
+&lt;script type="text/javascript" src="jquery.min.js"&gt;&lt;/script&lt;
+&lt;link rel="stylesheet" type="text/css" href="imageframer/if.css" /&lt;
+&lt;script type="text/javascript" src="imageframer/if.js" &gt;&lt;/script&lt;
+
+&lt;script type="text/javascript"&gt;
+    $(function() {
+
+      $('.frame').imageframer();
+
+    });
+&lt;/script&gt;
+
+```
+
+###2.
+
+Add the `.frame` class to all elements you wish to frame
 
 
 ## Tested browsers
@@ -27,9 +49,10 @@ _Website is coming soon._ Currently you can find demo html files in the package.
 ## What's to come (maybe)?
 
 * Moar frames!!!
-* a psd file / script, that enables virtually anyone to make frames in a snap.
- * Currently I do have a file much like that to streamline my workflow to create the frames, but it's much too messy to be release to the wild ...and I used it with Slicy.
+* a psd file and script, to enable anyone ( who has photoshop ) to make frames in a snap.
+ * Currently I do have a file much like that, to streamline my workflow to create the frames, but it's much too messy to be released to the wild ...and I use it with Slicy.
+* I do also have a script that enables you to very easily re-color frames with very little effort. I just need to clean that up as well.
 * I need to refine some of the frame files.
  * Quality
  * top-bottom and right-left images are unnecessary wide for some frame types.
- * I pretty much half-assed the way I named the frames, so it's not very consistent.
+ * I pretty much half-assed the way I named the frames. Need to work on that.
