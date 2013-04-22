@@ -21,12 +21,14 @@ _Website is coming soon._ Currently you can find demo html files in the package.
 
 Add imageframer folder to you website root, add the following to your web page `<head>`.
 
-```javascript
-
+```html
 <script type="text/javascript" src="jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="imageframer/if.css" />
 <script type="text/javascript" src="imageframer/if.js" ></script>
 
+```
+
+```javascript
 <script type="text/javascript">
     $(function() {
 
@@ -34,7 +36,6 @@ Add imageframer folder to you website root, add the following to your web page `
 
     });
 </script>
-
 ```
 
 ###2.
