@@ -1,4 +1,3 @@
-
 /**
  * Image Framer v.1.0
  *
@@ -39,7 +38,7 @@
     margin: 0px;
     padding: 0px;
     position: absolute;
-    z-index: 3;
+    z-index: 1;
     top: 0px;
     right: 0px;
     bottom: 0px;
