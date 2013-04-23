@@ -19,9 +19,15 @@ _Website is coming soon._ Currently you can find demo html files in the package.
 
 ###1.
 
-Add imageframer folder to you website root, add the following to your web page `<head>`.
+* [Download the .zip][1].
+* Move `imageframer` folder to you website root.
+
+###2.
+
+Add the following to your web page `<head>`.
 
 ```HTML
+<!-- Make sure that jquery is linked as well -->
 <script type="text/javascript" src="jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="imageframer/if.css" />
 <script type="text/javascript" src="imageframer/if.js" ></script>
@@ -34,7 +40,7 @@ Add imageframer folder to you website root, add the following to your web page `
 </script>
 ```
 
-###2.
+###3.
 
 Add the `.frame` class to all elements you wish to frame
 
@@ -53,3 +59,6 @@ Add the `.frame` class to all elements you wish to frame
  * Quality
  * top-bottom and right-left images are unnecessary wide for some frame types.
  * I pretty much half-assed the way I named the frames. Need to work on that.
+
+
+[1]: https://github.com/joonaspaakko/Image-Framer-jquery-plugin/archive/master.zip
