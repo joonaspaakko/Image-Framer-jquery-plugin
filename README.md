@@ -15,6 +15,10 @@ _Website is coming soon._ Currently you can find demo html files in the package.
 * 4 different optional inner shadows
 * HTML 5 data-attributes can be used to overwrite the plugin options
 
+## Tested browsers
+
+* _Coming soon..._
+
 ## Usage instructions
 
 ###1.
@@ -44,10 +48,96 @@ Add the following to your web page `<head>`.
 
 Add the `.frame` class to all elements you wish to frame
 
+## Options
 
-## Tested browsers
+* **frameType:** 'wood' `List of frames below`
+* **frameSize:** 4 `Numbers from 1 to 4. 1 is the smallest and 4 is the largest`
+* **innerShadow:** null `Numbers from 1 to 4. 1 is the smallest / lightest and 4 is the biggest / darkest `
+* **disable:** false `Boolean value`
+* **callback:** function() {} `Triggered after everything is generated`
 
-* _Coming soon..._
+Options example
+
+```html
+<script type="text/javascript">
+    $(function() {
+
+      $('.frame').imageframer({
+          frameType: 'wood3',
+          callback: function() {
+              $(this).addClass('aClass');
+          },
+          innerShadow: 1
+      });
+
+    });
+</script>
+```
+
+## List of available frames:
+
+* wood-dark
+* wood-dark2
+* wood-darkgrey
+* wood-darkgreen
+* wood-darkorange
+* wood-darkred
+* wood-light
+* wood-light2
+* wood-light3
+* wood-old
+* wood-oldlight
+* wood-purple
+* wood3
+* wood4
+* wood5
+* wood6
+* rock
+* metallic
+* black
+* red
+* gold
+* gold2
+* silver
+* silver2
+
+
+## Data-attributes
+
+Example of all data attributes applied to one image ( minus 'disable' and 'callback' ):
+
+```html
+<img 
+    class="frame" 
+    data-frame-type="black" 
+    data-frame-size="3" 
+    data-inner-shadow="1" 
+    data-custom-class="myClass" 
+    src="myImg.jpg" alt="" 
+/>
+
+```
+
+Example of the disable option:
+
+
+```html
+<img class="frame" data-disable="true" src="myImg.jpg" alt="" />
+<img class="frame" src="myImg.jpg" alt="" />
+<img class="frame" src="myImg.jpg" alt="" />
+<img class="frame" src="myImg.jpg" alt="" />
+
+```
+
+Callback can only be used as a data-attribute to disable `callback` for certain elements:
+
+```html
+<img class="frame" data-callback="false" src="myImg.jpg" alt="" />
+<img class="frame" src="myImg.jpg" alt="" />
+<img class="frame" src="myImg.jpg" alt="" />
+<img class="frame" src="myImg.jpg" alt="" />
+
+```
 
 ## What's to come (maybe)?
 
