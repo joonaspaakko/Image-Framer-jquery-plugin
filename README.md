@@ -107,13 +107,13 @@ Options example
 Example of all data attributes applied to one image ( minus 'disable' and 'callback' ):
 
 ```html
-<img 
-    class="frame" 
-    data-frame-type="black" 
-    data-frame-size="3" 
-    data-inner-shadow="1" 
-    data-custom-class="myClass" 
-    src="myImg.jpg" alt="" 
+<img
+    class="frame"
+    data-frame-type="black"
+    data-frame-size="3"
+    data-inner-shadow="1"
+    data-custom-class="myClass"
+    src="myImg.jpg" alt=""
 />
 
 ```
@@ -139,14 +139,24 @@ Callback can only be used as a data-attribute to disable `callback` for certain 
 
 ```
 
+## Want to make your own frames?
+
+There's photoshop template and script just for that!
+
+You can get it here: [Photoshop Image Framer Export Script](https://github.com/joonaspaakko/Photoshop-Image-Framer-Export-Script)
+
+## Changelog
+
+####v.1.1.
+* Remade all the frames _( Just minor changes )_
+* Had to change css positioning due to the new frames that are more refined
+* Even though it's not included in the package, I made [Photoshop Image Framer Export Script](https://github.com/joonaspaakko/Photoshop-Image-Framer-Export-Script) that will make it super easy to make frames.
+
 ## What's to come (maybe)?
 
 * Moar frames!!!
-* a psd file and script, to enable anyone ( who has photoshop ) to make frames in a snap.
- * Currently I do have a file much like that, to streamline my workflow to create the frames, but it's much too messy to be released to the wild ...and I use it with Slicy.
-* I do also have a script that enables you to very easily re-color frames with very little effort. I just need to clean that up as well.
+* Maybe a photoshop script that enables re-color multiple frames at once...?
 * I need to refine some of the frame files.
- * Quality
  * top-bottom and right-left images are unnecessary wide for some frame types.
  * I pretty much half-assed the way I named the frames. Need to work on that.
 
