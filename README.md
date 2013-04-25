@@ -139,6 +139,10 @@ Callback can only be used as a data-attribute to disable `callback` for certain 
 
 ```
 
+## Known issues
+
+* The frame images will get 1px shift when you zoom the document ( _not at all zoom levels_ ). Automatic tablet zooming causes this as well, but I really don't find it super distracting. If you are concerned with it, in quite a few situations you can get rid of it by using a frame that doesn't have a shadow. Of course you could replace the shadow with css3 shadow...
+
 ## Want to make your own frames?
 
 There's photoshop template and script just for that!
