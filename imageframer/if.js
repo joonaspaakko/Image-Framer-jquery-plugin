@@ -15,7 +15,7 @@
                 frameSize: 4,           // Numbers from 1 to 4. 1 is the smallest and 4 is the largest.
                 innerShadow: null,         // Numbers from 1 to 4. 1 is the smallest / lightest and 4 is the biggest / darkest.
                 disable: false,          // Enables you to disable the plugin.
-                callback: function() {},
+                callback: function() {}
             };
 
             return this.each(function() {
