@@ -4,8 +4,7 @@
 
 Image Framer is very simple jQuery plugin that wraps your images inside a frame. _Actually, despite the name, you can frame any element._
 
-
-_Website is coming soon._ Currently you can find demo html files in the package.
+[Image Framer Website](http://imageframer.joonas.me/)
 
 ## Freatures
 
