@@ -44,7 +44,7 @@
                 );
 
                 var sifWrap = obj.parent('.if-wrap'),
-                    background = [ ' background-image: url( imageframer/frames/'+ frameType + '-' + frameSize + '/', '.png ); ' ];
+                    background = [ ' background-image: url( /imageframer/frames/'+ frameType + '-' + frameSize + '/', '.png ); ' ];
 
                 // - Generate frame elements.
                 // - Fetch proper background images for each element.
@@ -63,7 +63,7 @@
                 // Inner shadow
                 if ( o.innerShadow ) {
 
-                    $('<img class="if-innerShadow" src="imageframer/innerShadows/is-'+ is +'.png" alt="" />').appendTo( sifWrap );
+                    $('<img class="if-innerShadow" src="/imageframer/innerShadows/is-'+ is +'.png" alt="" />').appendTo( sifWrap );
                 }
 
 
